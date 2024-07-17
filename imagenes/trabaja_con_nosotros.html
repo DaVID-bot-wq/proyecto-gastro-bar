@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta chavenidp a inicio rset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabaja con nosotros </title>
+    
+    <p>trabaja con nosotros</p>
+    </head>
+    <body>
+        <div>
+            <p><strong>Mision</strong></p>
+            <p>Proporcionar una experiencia culinaria única y memorable a nuestros clientes, combinando creatividad y autenticidad en <br>
+                cada plato y cóctel, en un ambiente acogedor y vibrante.</p>
+            <p><strong>Vision</strong></p>
+            <p>Convertirnos en el destino preferido para los amantes de la gastronomía y la mixología, fusionando sabores auténticos con<br>
+                un ambiente vibrante y acogedor, donde cada visita sea una experiencia culinaria única e inolvidable.</p>
+        </div>
+        <div>
+            <h3>vacantes</h3>
+            <input type="radio" id="vacante1" name="evento" > chef<br>
+            <input type="radio" id="vacante2" name="evento" > ayudante de cocina<br>
+            <input type="radio" id="vacante3" name="evento" > mesero<br>
+            <input type="radio" id="vacante4" name="evento" > bartender<br>
+            <input type="radio" id="vacante5" name="evento" > lavapatos<br>
+            <input type="radio" id="vacante6" name="evento" > personal de limpiesa<br>
+            <input type="button" value="verificar" onclick="verificarvac()">
+
+            <p>si la vacante esta disponible enviamos tu hoja de vida a este correo ...</p>
+        </div>
+        <input type="file" id="archivo" />
+        <p id="nombre-archivo"></p>
+        <input type="button" value="enviar" onclick="enviarc()">
+    </body>
+    <script>
+        function verificarvac() {
+            if (document.getElementById('vacante1').checked) {
+                alert("vacante no disponible");
+            }
+            else if (document.getElementById('vacante2').checked) {
+                alert("vacante disponible enviamos tu hoja de vida")
+            }
+            else if (document.getElementById('vacante3').checked) {
+                alert("vacante disponible enviamos tu hoja de vida");
+            }
+            else if (document.getElementById('vacante4').checked) {
+                alert("vacante disponible enviamos tu hoja de vida");
+            }
+            else if (document.getElementById('vacante5').checked) {
+                alert("vacante disponible enviamos tu hoja de vida");
+            }
+            else if (document.getElementById('vacante1').checked) {
+                alert("vacante no disponible ");
+            }
+            else {
+                alert("opcion incorrecta");
+            }
+            
+        }
+        const archivoInput = document.getElementById("archivo"); //como funciona esto
+            const nombreArchivoElement = document.getElementById("nombre-archivo");
+
+            archivoInput.addEventListener("change", () => {
+            const archivoSeleccionado = archivoInput.files[0];
+            nombreArchivoElement.textContent = archivoSeleccionado.name;
+            });
+            function enviarc (){
+                alert("la hoja de vida se ha enviado correctamente");
+            }
+    </script>
+    </html> 

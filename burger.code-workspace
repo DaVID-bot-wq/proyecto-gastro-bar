@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../burger"
+		},
+		{
+			"path": "../saha rooftop"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../proyecto sena"
+		},
+		{
+			"path": "../../js/prectica 1 js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "gastro bar"
+	}
+}
